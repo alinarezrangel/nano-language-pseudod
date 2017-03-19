@@ -1,0 +1,15 @@
+## Syntax highlight for PseudoD
+##
+syntax "PseudoD" "\.pd$" "\.pseudo$" "\.psd$"
+color brightblue "funcion [0-9A-Za-z_#\.\,\¿\?\(\)]+"
+color brightcyan "\<(tanto|como|algun|o|e|de|con|metodo|a(tributo|bstracta)?|funcion|fijar|oper|operador|finclase|liberar|adquirir|puntero|instancia|clase|estructura|hereda(r)?|implementa|extiende|si|si(_)?no|necesitas|fin(bucle|fun)?|contiene|redireccionar|mientras|ejecutar|escribir(_esp)?|nl|incrementar_p(untero)?|decrementar_p(untero)?|llamar|leer|utilizar|sistema|empujar|enviar_parametro|devolver|sacar|recibir_(parametro|resultado)|usar_pila|crear_pila|comparar|.son_iguales.|es|no|comparar_i|sal(ir)?|son|sean|iguales|diferentes|y|finargs|Importar\.[a-zA-Z0-9\._\,\(\)]+|llamar|\#\(Final\)\.|utilizar|fijar|adquirir|liberar|instancia|puntero|atributo|metodo|abstracta)\>"
+color cyan "\<(a|\=((¿)?\?|\*)|tanto|como|algun|o|e|de|con|comparar|es|no|son|sean|iguales|diferentes|y)\>"
+color brightgreen "\=\* .+$"
+color brightgreen start="\{" end="\}"
+color brightgreen start="«" end="»"
+color brightyellow "\<([A-Z0-9_]+)\>"
+color brightblack "(<[^ \r\n\t\>]*>)"
+color brightgreen "(\#[a-zA-Z0-9_\!\¡\@\$\%\^\&\*\(\)\-\=\+\¿\?\.\,]+)"
+color green "\<(NULO|CMMERROR|SI|NO|CERO|UNO|UNON|DOS|TRES|CINCO|VG_BUFFER(_DATOS)?(_DATA)?|\#|PSEUDOD|__(ARCH|LIB|MAIN)__|BEPD)\>"
+color black,red "\<(oper(ador)?|si_no|son_iguales|estructura|contiene|sistema)\>"
+color brightred start="\[" end="\]"
